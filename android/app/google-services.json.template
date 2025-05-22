@@ -1,0 +1,62 @@
+# Configuração do Firebase para Android
+
+Este arquivo contém as configurações necessárias para integrar o Firebase ao seu aplicativo Android.
+
+## Instruções de Instalação
+
+1. Adicione este arquivo ao diretório `app` do seu projeto Android
+2. Certifique-se de que as dependências do Firebase estão configuradas corretamente no pubspec.yaml
+3. Inicialize o Firebase no seu aplicativo
+
+## Configuração
+
+```json
+{
+  "project_info": {
+    "project_number": "000000000000",
+    "project_id": "clan-manager-app",
+    "storage_bucket": "clan-manager-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:000000000000:android:xxxxxxxxxxxxxxxxxxxxxxxx",
+        "android_client_info": {
+          "package_name": "com.lamafiaclamad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "000000000000-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "000000000000-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "000000000000-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.clan-manager-app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+```
+
+**Nota**: Substitua os valores acima pelos valores reais do seu projeto Firebase.
